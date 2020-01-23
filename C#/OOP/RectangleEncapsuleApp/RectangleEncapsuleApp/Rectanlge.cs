@@ -8,50 +8,50 @@ namespace RectangleEncapsuleApp
 {
     class Rectanlge
     {
-        private int width;
-        private int height;
+        private int _width;
+        private int _height;
         public int CalculteArea()
         {
-            return width * height;
+            return _width * _height;
         }
         public void SetWidth(int pwidth)
         {
-            if (pwidth <= -1)
-            {
-                width = 1;
-            }
-            else if (pwidth > 100)
-            {
-                width = 100;
-            }
-            else
-            {
-                width = pwidth;
-            }
+        
+            _width = Validate(pwidth);
         }
         public void SetHeight(int pheight)
         {
-            if (pheight <= -1)
-            {
-                height = 1;
-            }
-            else if (pheight > 100)
-            {
-                height = 100;
-            }
-            else
-            {
-                height = pheight;
-            }
+    
+            _height = Validate(pheight);
         }
         public int GetHeight()
         {
-            return height;
+            return _height;
         }
         public int GetWidth()
         {
-            return width;
+            return _width;
         }
+
+        public int Validate(int valGiven)                          
+        {
+            // if (valGiven <= -1)
+            // {
+            //     return 1;
+            //  }
+            //  else if (valGiven > 100)
+            //   {
+            //      return 100;
+            //  }
+            //   else
+            //   {
+            //       return valGiven;
+            //   }
+
+            return  (valGiven<=-1) ? 1 : (valGiven >100) ? 100: valGiven;
+
+        }
+
     }
 
 }
