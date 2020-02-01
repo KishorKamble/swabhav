@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW_CircleEnum
 {
-    class Circle_Enum
+    class Circle
     {
         private float _radius;
         private float _area;

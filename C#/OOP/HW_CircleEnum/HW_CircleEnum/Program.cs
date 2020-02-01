@@ -14,7 +14,7 @@ namespace HW_CircleEnum
             Console.BackgroundColor = ConsoleColor.Red;
             Console.ForegroundColor = ConsoleColor.Blue;
 
-            Circle_Enum obj = new Circle_Enum();
+            Circle obj = new Circle();
             obj.radius = 2.5f;
             obj.color = BorderColor.RED;
 

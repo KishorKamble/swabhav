@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F4687D0-800A-4BCF-AB59-5ACFE69A43B1}</ProjectGuid>
+    <ProjectGuid>{70DFD08B-4BFE-4C58-BC28-EDFFFFADE3DF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HW_CircleEnum</RootNamespace>
-    <AssemblyName>HW_CircleEnum</AssemblyName>
+    <RootNamespace>RectangleArraysApp</RootNamespace>
+    <AssemblyName>RectangleArraysApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,10 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="BorderColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

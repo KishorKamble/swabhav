@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F4687D0-800A-4BCF-AB59-5ACFE69A43B1}</ProjectGuid>
+    <ProjectGuid>{94234163-654E-4956-B4F1-71F24C4C86E5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HW_CircleEnum</RootNamespace>
-    <AssemblyName>HW_CircleEnum</AssemblyName>
+    <RootNamespace>ArrayApp</RootNamespace>
+    <AssemblyName>ArrayApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="BorderColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
