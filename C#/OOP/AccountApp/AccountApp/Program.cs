@@ -11,15 +11,17 @@ namespace AccountApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello");
-            Account acc1 = new Account("K12345", "Kishor", 200d);
+            Account acc1 = new Account("K12345", "Kishor", 2000d);
             Console.WriteLine("Before Deposite");
             PrintInfo(acc1);
-            acc1.DepositAmt(300);
-            Console.WriteLine("After Deposite Rs-300/-");
+            acc1.Deposit(500);
+            Console.WriteLine("After Deposite Rs-500/-");
             PrintInfo(acc1);
-                      
-            acc1.WithdrawAmt(501);
-            Console.WriteLine("After Withdraw Rs-501/-");
+
+            Console.WriteLine("Now Withdrawing Rs-2001/-");
+
+            acc1.Withdraw(2001);
+          
             PrintInfo(acc1);
 
 

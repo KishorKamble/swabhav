@@ -11,7 +11,7 @@ namespace AccountApp
         private string _account;
         private string _name;
         private Double _balance;
-        private double _deposit;
+        
 
         public Account(string account,string name,Double balance)
         {
@@ -25,23 +25,23 @@ namespace AccountApp
         {
         }
 
-        public void DepositAmt(double deposit) 
+        public void Deposit(double amt) 
         {
-            _balance = _balance + deposit;
+            _balance = _balance + amt;
         }
 
-        public void WithdrawAmt(double withdraw) 
+        public void Withdraw(double amt) 
         {
-            // _balance = _balance - withdraw;
-
-            if (_balance < withdraw) 
+            // _balance = _balance - withdraw; 
+             double _calBal = _balance - amt;
+              if (_calBal < 500) 
             {
-                Console.WriteLine("Can not withdraw amt...");
+                Console.WriteLine("Can not withdraw amt...min bal is Rs - 500 require");
+                return;
             }
-            else
-            {
-                _balance = _balance - withdraw;
-            }
+            
+                _balance = _balance - amt;
+           
         }
 
         public string AccountNo
@@ -67,14 +67,7 @@ namespace AccountApp
                 return _balance;
             }
         }
-        public double Deposit
-        {
-            get
-            {
-                return _deposit;
-            }
-        }
-
+     
 
     }
 }
